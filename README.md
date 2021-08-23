@@ -23,9 +23,13 @@ Please build a typeahead search feature so the user can look up airports by sear
 
 We'd love to hear your thoughts on some of these questions. Please don't spend more than a minute or two on each question.
 
+ - What are some edge cases you would take care of before shipping this to production?
+ - How would you scale this to handle high amounts of traffic?
+ - What's important for you to work well in a fully remote team?
+
 ## Deliverables
 
-- Invite @ffiller, @pieterbeulque, and @marcqualie to a GitHub repo with your completed project
+- Invite [@ffiller](https://github.com/ffiller), [@pieterbeulque](https://github.com/pieterbeulque), and [@marcqualie](https://github.com/marcqualie) to a GitHub repo with your completed project
 - A video of your screen recording (unlisted YouTube video, Loom, … anything works)
 - Answers to the questions above can be either in the video or written down in the README of your repo
 
