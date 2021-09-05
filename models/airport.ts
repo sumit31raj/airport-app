@@ -8,7 +8,6 @@ export const findAirportByIata = async (iata: string): Promise<Airport | undefin
 export const allAirports = async (): Promise<Airport[]> => {
   return airports
 }
-
-export const findAirportByKeys = async (value: string, key: string): Promise<Airport[]> => {
-  return airports.filter(airports => airports[key].toUpperCase().includes(value.toUpperCase()))
+export const findAirportByKeys = async (key: string, value: string): Promise<Airport[]> => {
+    return airports.filter(airports => airports[key].toUpperCase().includes(value.toUpperCase()))
 }
