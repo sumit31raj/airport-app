@@ -16,3 +16,5 @@ export const searchOptions = [
     value: "country",
   },
 ];
+
+export const minSearchTextSize = 3;

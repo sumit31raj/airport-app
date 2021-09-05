@@ -6,7 +6,7 @@ import debounce from "lodash/debounce"
 import Layout from '../components/layout'
 import useGetApi from '../hooks/use-get-api'
 import Airport from '../types/airport'
-import { searchOptions } from '../constants'
+import { searchOptions, minSearchTextSize } from '../constants'
 import Dropdown from '../components/Dropdown'
 import InputText from '../components/Inputtext'
 
@@ -24,7 +24,9 @@ const Page: NextPage = () => {
   const onChange = (e) => {
     const { value } = e.target
     setSearchText(value)
-    getAirportList(searchKey, value)
+    if(value.length > minSearchTextSize) {
+      getAirportList(searchKey, value)
+    }
   }
 
   const getSearchResults = (key, value) => {
@@ -67,7 +69,7 @@ const Page: NextPage = () => {
           </a>
         </Link>
       ))}
-      {(airports.length === 0 && !!searchText) && (
+      {(airports.length === 0 && searchText.length > minSearchTextSize) && (
         <div className="flex items-center p-5 mt-5 text-gray-800 border border-gray-200 rounded-lg shadow-sm hover:border-blue-600 focus:border-blue-600 focus:ring focus:ring-blue-200 focus:outline-none">
         <span>
           No Airports found for the searched content
