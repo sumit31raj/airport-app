@@ -8,7 +8,7 @@ import useGetApi from '../hooks/use-get-api'
 import Airport from '../types/airport'
 import { searchOptions, minSearchTextSize } from '../constants'
 import Dropdown from '../components/Dropdown'
-import InputText from '../components/Inputtext'
+import InputText from '../components/InputText'
 
 
 const Page: NextPage = () => {
